@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="d_bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFEBEE"/>
+      <stop offset="70%" stop-color="#FFCDD2"/>
+      <stop offset="100%" stop-color="#EF9A9A"/>
+    </radialGradient>
+    <linearGradient id="d_red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1744"/>
+      <stop offset="100%" stop-color="#B71C1C"/>
+    </linearGradient>
+    <linearGradient id="d_gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF59D"/>
+      <stop offset="100%" stop-color="#FBC02D"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#d_bg)" stroke="#C62828" stroke-width="4"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#D32F2F" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Crown / Mukut -->
+  <path d="M65 65 L100 25 L135 65 Z" fill="url(#d_gold)" stroke="#C62828" stroke-width="2"/>
+  <circle cx="100" cy="22" r="5" fill="#D50000"/>
+  <circle cx="100" cy="45" r="4" fill="#D50000"/>
+  <circle cx="82" cy="55" r="3" fill="#D50000"/>
+  <circle cx="118" cy="55" r="3" fill="#D50000"/>
+  <!-- Face -->
+  <path d="M72 65 C70 100 80 118 100 118 C120 118 130 100 128 65 Z" fill="#FFE0B2" stroke="#FFA726" stroke-width="1.5"/>
+  <!-- Third Eye (Trinetra) -->
+  <path d="M96 68 Q100 60 104 68 Q100 76 96 68 Z" fill="url(#d_red)"/>
+  <!-- Red Bindi & Chandrakor -->
+  <circle cx="100" cy="62" r="4" fill="#B71C1C"/>
+  <path d="M94 58 Q100 54 106 58 Q100 56 94 58 Z" fill="#B71C1C"/>
+  <!-- Eyes -->
+  <path d="M76 80 Q88 74 96 84 Q88 88 76 80 Z" fill="#FFF"/>
+  <circle cx="87" cy="81" r="2.5" fill="#212121"/>
+  <path d="M124 80 Q112 74 104 84 Q112 88 124 80 Z" fill="#FFF"/>
+  <circle cx="113" cy="81" r="2.5" fill="#212121"/>
+  <!-- Nose Ring (Nath) -->
+  <circle cx="94" cy="94" r="5" fill="none" stroke="url(#d_gold)" stroke-width="2"/>
+  <circle cx="91" cy="94" r="2" fill="#D50000"/>
+  <circle cx="97" cy="94" r="2" fill="#00E676"/>
+  <!-- Trishul Motif Background -->
+  <path d="M42 90 L52 75 L52 140 L42 140 Z" fill="url(#d_gold)" opacity="0.8"/>
+  <path d="M158 90 L148 75 L148 140 L158 140 Z" fill="url(#d_gold)" opacity="0.8"/>
+  <!-- Lotus -->
+  <path d="M90 145 C80 130 100 120 100 135 C100 120 120 130 110 145 Z" fill="#F06292"/>
+  <text x="100" y="184" font-size="15" font-family="'Rozha One', serif" font-weight="bold" fill="#B71C1C" text-anchor="middle">श्री दुर्गा देवी</text>
+</svg>

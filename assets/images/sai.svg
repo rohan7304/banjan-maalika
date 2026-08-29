@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="s_bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="70%" stop-color="#FFF9C4"/>
+      <stop offset="100%" stop-color="#FFF59D"/>
+    </radialGradient>
+    <linearGradient id="s_cloth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9800"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#s_bg)" stroke="#E65100" stroke-width="4"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#FB8C00" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Head Cloth (Kafni / Pagdi) -->
+  <path d="M68 65 C68 35 132 35 132 65 C135 80 130 85 130 90 L70 90 C70 85 65 80 68 65 Z" fill="url(#s_cloth)" stroke="#BF360C" stroke-width="1.5"/>
+  <path d="M65 65 Q100 78 135 65" stroke="#FFE0B2" stroke-width="3" fill="none"/>
+  <!-- Face -->
+  <path d="M72 70 C70 100 80 115 100 115 C120 115 130 100 128 70 Z" fill="#FFE0B2"/>
+  <!-- White Beard -->
+  <path d="M74 95 C75 140 125 140 126 95 C118 115 82 115 74 95 Z" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1"/>
+  <!-- Compassionate Eyes -->
+  <path d="M80 82 Q88 78 94 84" stroke="#424242" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M120 82 Q112 78 106 84" stroke="#424242" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Tilak -->
+  <circle cx="100" cy="72" r="3" fill="#E65100"/>
+  <line x1="94" y1="69" x2="106" y2="69" stroke="#E65100" stroke-width="1.5"/>
+  <!-- Robe (Kafni) -->
+  <path d="M50 145 Q100 120 150 145 L155 175 L45 175 Z" fill="url(#s_cloth)"/>
+  <!-- Shlok/Blessing text -->
+  <text x="100" y="190" font-size="14" font-family="'Rozha One', serif" font-weight="bold" fill="#BF360C" text-anchor="middle">श्री साई / दत्त</text>
+</svg>

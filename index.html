@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="mr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#FF7A00">
+    <meta name="description" content="भजन मालिका (Bhajan Maalika) - तुमच्या भक्ती रचना आणि भजनांचे डिजिटल संकलन">
+    <title>भजन मालिका | Bhajan Maalika</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Rozha+One&family=Tiro+Devanagari+Marathi:ital@0;1&family=Yantramanav:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css?v=2.6">
+</head>
+<body>
+
+    <!-- ==================================================================== -->
+    <!-- 1. SPLASH / INTRO VIEW                                               -->
+    <!-- ==================================================================== -->
+    <section id="splash-view" class="app-view active" role="banner" aria-label="प्रवेश स्क्रीन">
+        <div class="splash-content">
+            <div class="splash-mandala">
+                <span class="splash-om">ॐ</span>
+            </div>
+            <div class="splash-title-wrapper">
+                <h1 class="splash-title">भजन मालिका</h1>
+            </div>
+            <p class="splash-subtitle">तुमच्या भक्ती रचनांचे डिजिटल भांडार</p>
+            <div class="splash-tagline">
+                <span>🪔</span>
+                <span>भक्ती • संगीत • साधना</span>
+                <span>🌸</span>
+            </div>
+            <p class="splash-hint">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 16 16 12 12 8"></polyline>
+                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+                पुढे जाण्यासाठी स्क्रीनवर कुठेही स्पर्श करा
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- TOP NAVIGATION BAR (For Home & Collection Views)                    -->
+    <!-- ==================================================================== -->
+    <header id="main-navbar" class="navbar" style="display: none;">
+        <div class="container navbar-inner">
+            <div class="nav-left">
+                <a class="brand-link" id="nav-brand-btn" title="मुख्यपृष्ठ (Home)">
+                    <div class="brand-icon">ॐ</div>
+                    <span class="brand-title">भजन मालिका</span>
+                </a>
+            </div>
+
+            <div class="search-container">
+                <svg class="search-icon-inside" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="global-search-input" class="search-input" placeholder="भजन किंवा संकलन शोधा..." autocomplete="off" spellcheck="false">
+                <button type="button" id="search-clear-btn" class="search-clear-btn" title="साफ करा (Clear)">✕</button>
+            </div>
+
+            <div class="nav-right">
+                <!-- Add Collection (+) Button in Navbar -->
+                <button type="button" class="icon-btn" id="nav-add-btn" title="नवीन संकलन जोडा (New Collection)">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+
+                <!-- Theme Toggle Button -->
+                <button type="button" class="icon-btn" id="theme-toggle-btn" title="थीम बदला (Toggle Light/Dark)">
+                    <!-- Sun Icon (Light Mode) -->
+                    <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon (Dark Mode) -->
+                    <svg class="theme-icon-moon" style="display: none;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================================================================== -->
+    <!-- 2. HOME VIEW (Collections Dashboard)                                 -->
+    <!-- ==================================================================== -->
+    <main id="home-view" class="app-view">
+        <div class="container">
+            <!-- Hero Header -->
+            <section class="home-hero">
+                <div class="home-hero-text">
+                    <h1>भजन संकलने (Collections)</h1>
+                    <p>तुमच्या सर्व आवडत्या आरत्या, अभंग व भजनांचे वर्गीकरण</p>
+                </div>
+                <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+                    <div class="hero-stats-badge" id="backend-status-badge">
+                        <span id="backend-status-dot">🟢</span>
+                        <span id="backend-status-text">बॅकएंड: सक्रिय (SQLite)</span>
+                    </div>
+                    <div class="hero-stats-badge" id="stats-counter-badge">
+                        <span>📿</span>
+                        <span id="stats-text"><strong>४</strong> संकलने • <strong>८</strong> भजने</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Collections Section -->
+            <section class="collections-section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span>📂</span> सर्व संकलन सूची
+                    </h2>
+                    <button type="button" class="btn-primary" id="home-create-col-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        <span>नवीन संकलन</span>
+                    </button>
+                </div>
+
+                <!-- Collections Grid -->
+                <div id="collections-grid" class="collections-grid">
+                    <!-- Dynamically populated via storage.js / app.js -->
+                </div>
+
+                <!-- Empty State (When no collections exist or match search) -->
+                <div id="collections-empty-state" class="empty-state" style="display: none;">
+                    <span class="empty-icon">🪔</span>
+                    <h3>कोणतेही संकलन सापडले नाही</h3>
+                    <p>नवीन भजन संकलन तयार करण्यासाठी खालील बटणावर क्लिक करा.</p>
+                    <button type="button" class="btn-primary" id="empty-create-col-btn">
+                        <span>+ नवीन संकलन तयार करा</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ==================================================================== -->
+    <!-- 3. COLLECTION VIEW (Bhajan Titles List within a Collection)         -->
+    <!-- ==================================================================== -->
+    <section id="collection-view" class="app-view">
+        <div class="container">
+            <!-- View Header / Breadcrumb -->
+            <header class="view-header">
+                <div class="breadcrumb-nav">
+                    <button type="button" class="btn-back" id="col-back-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                        <span>सर्व संकलने (Home)</span>
+                    </button>
+                </div>
+
+                <div class="collection-header-details">
+                    <div class="collection-title-group">
+                        <div>
+                            <h1 id="col-detail-name">श्री गणेश भजने</h1>
+                            <div class="collection-meta">
+                                <span id="col-detail-count">३ भजने</span>
+                                <span>•</span>
+                                <span id="col-detail-date">अद्यतनित</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button type="button" class="btn-primary" id="col-add-bhajan-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <span>नवीन भजन जोडा</span>
+                        </button>
+                        <button type="button" class="icon-btn" id="col-edit-btn" title="संकलन संपादित करा (Edit)">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                            </svg>
+                        </button>
+                        <button type="button" class="icon-btn" id="col-delete-btn" title="संकलन हटवा (Delete)" style="color: #DC2626;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Bhajan List -->
+            <div id="bhajans-list-container" class="bhajan-list">
+                <!-- Dynamically populated -->
+            </div>
+
+            <!-- Empty State for Collection -->
+            <div id="bhajans-empty-state" class="empty-state" style="display: none;">
+                <span class="empty-icon">🪕</span>
+                <h3>या संकलनात अद्याप कोणतेही भजन नाही</h3>
+                <p>नवीन भजन शीर्षक व बोल जोडण्यासाठी खालील बटणावर क्लिक करा.</p>
+                <button type="button" class="btn-primary" id="empty-add-bhajan-btn">
+                    <span>+ पहिले भजन जोडा</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- 4. NOTE / LYRICS EDITOR & READER VIEW                               -->
+    <!-- ==================================================================== -->
+    <section id="note-view" class="app-view">
+        <!-- Note Header Bar -->
+        <div class="note-navbar">
+            <div class="container note-nav-inner">
+                <button type="button" class="btn-back" id="note-back-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    <span id="note-back-col-title">संकलन</span>
+                </button>
+
+                <!-- Auto-Save Status Indicator -->
+                <div class="save-status-pill saved" id="save-status-indicator">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span id="save-status-text">जतन केले ✓</span>
+                </div>
+
+                <div style="display: flex; gap: 0.4rem;">
+                    <!-- Copy Lyrics Button -->
+                    <button type="button" class="icon-btn" id="note-copy-btn" title="बोल कॉपी करा (Copy Lyrics)">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                    <!-- Delete Bhajan Button -->
+                    <button type="button" class="icon-btn" id="note-delete-btn" title="भजन हटवा (Delete Bhajan)" style="color: #DC2626;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Lyrics Editor & Reading Controls Toolbar -->
+            <div class="note-toolbar">
+                <!-- Mode Toggle (Editor vs Reading View) -->
+                <div class="toolbar-group">
+                    <div class="segmented-control">
+                        <button type="button" class="tool-btn active" id="btn-mode-edit" title="संपादक मोड (Edit Mode)">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                            </svg>
+                            <span>संपादन (Edit)</span>
+                        </button>
+                        <button type="button" class="tool-btn" id="btn-mode-read" title="वाचन / गायन मोड (Reading / Chanting Mode)">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                            <span>गायन (Sing/Read)</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Font Resizing Controls (A- / A+) -->
+                <div class="toolbar-group">
+                    <span style="font-size: 0.8rem; color: var(--text-tertiary);">फॉन्ट:</span>
+                    <div class="font-scale-control">
+                        <button type="button" class="font-scale-btn" id="font-decrease-btn" title="फॉन्ट लहान करा (Smaller)">A−</button>
+                        <span class="font-scale-display" id="font-size-display">18px</span>
+                        <button type="button" class="font-scale-btn" id="font-increase-btn" title="फॉन्ट मोठा करा (Larger)">A+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marathi Punctuation & Symbols Quick Bar -->
+            <div class="marathi-helper-bar" id="marathi-helper-bar">
+                <span style="font-size: 0.75rem; color: var(--text-tertiary); margin-right: 0.25rem;">जलद चिन्हे:</span>
+                <button type="button" class="char-chip" data-char="।">।</button>
+                <button type="button" class="char-chip" data-char="॥">॥</button>
+                <button type="button" class="char-chip" data-char="॥ १ ॥">॥ १ ॥</button>
+                <button type="button" class="char-chip" data-char="॥ २ ॥">॥ २ ॥</button>
+                <button type="button" class="char-chip" data-char="॥ ३ ॥">॥ ३ ॥</button>
+                <button type="button" class="char-chip" data-char="॥ ध्रु. ॥">॥ ध्रु. ॥</button>
+                <button type="button" class="char-chip" data-char="ॐ">ॐ</button>
+                <button type="button" class="char-chip" data-char="🚩">🚩</button>
+                <button type="button" class="char-chip" data-char="🪔">🪔</button>
+                <button type="button" class="char-chip" data-char="🌸">🌸</button>
+            </div>
+
+            <!-- Note Canvas -->
+            <div class="note-container">
+                <!-- Bhajan Title (Editable) -->
+                <input type="text" id="note-title-input" class="note-title-input" placeholder="भजनाचे नाव (उदा. सुखकर्ता दुःखहर्ता)..." spellcheck="false">
+
+                <!-- Textarea Editor for Lyrics (Auto-Saves) -->
+                <textarea id="note-lyrics-editor" class="lyrics-editor-textarea" placeholder="येथे भजनाचे बोल, कडवे किंवा ताल लिहा... (सर्व बदल आपोआप जतन होतात)" spellcheck="false"></textarea>
+
+                <!-- Formatted Reader View (Singing/Chanting Mode) -->
+                <div id="note-lyrics-reader" class="lyrics-reader-view"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- FLOATING ACTION BUTTON (Add Collection on Home)                      -->
+    <!-- ==================================================================== -->
+    <div class="fab-container" id="fab-container" style="display: none;">
+        <button type="button" class="fab-btn" id="fab-add-btn" title="नवीन संकलन / भजन जोडा">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+        </button>
+    </div>
+
+    <!-- ==================================================================== -->
+    <!-- MODALS                                                               -->
+    <!-- ==================================================================== -->
+
+    <!-- 1. Modal: Add / Edit Collection -->
+    <div id="modal-collection" class="modal-backdrop">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="modal-col-heading">नवीन संकलन तयार करा</h3>
+                <button type="button" class="modal-close-btn" id="modal-col-close">✕</button>
+            </div>
+            <form id="form-collection" onsubmit="return false;">
+                <div class="modal-body">
+                    <input type="hidden" id="modal-col-id">
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="input-col-name">संकलनाचे नाव (Collection Name)*</label>
+                        <input type="text" id="input-col-name" class="form-input" placeholder="उदा. श्री गणेश भजने, विठ्ठल अभंग..." required autofocus>
+                    </div>
+
+                    <!-- Marathi Preset Suggestions -->
+                    <div class="form-group">
+                        <label class="form-label" style="font-size: 0.78rem;">सुचवलेली नावे:</label>
+                        <div class="preset-chips-list">
+                            <button type="button" class="preset-chip" data-name="श्री गणेश भजने">गणेश भजने</button>
+                            <button type="button" class="preset-chip" data-name="विठ्ठल अभंग व भजने">विठ्ठल अभंग</button>
+                            <button type="button" class="preset-chip" data-name="श्री दुर्गा व देवी भजने">देवी भजने</button>
+                            <button type="button" class="preset-chip" data-name="दत्तगुरू व साई भजने">दत्त व साई</button>
+                            <button type="button" class="preset-chip" data-name="नित्य आरत्या">नित्य आरत्या</button>
+                            <button type="button" class="preset-chip" data-name="राम व कृष्ण भजने">राम-कृष्ण</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="input-col-subtitle">उपशीर्षक / टीप (Optional)</label>
+                        <input type="text" id="input-col-subtitle" class="form-input" placeholder="उदा. Ganpati Bhajans / नित्य उपासना...">
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary" id="modal-col-cancel">रद्द करा</button>
+                    <button type="submit" class="btn-primary" id="modal-col-save">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                            <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                            <polyline points="7 3 7 8 15 8"></polyline>
+                        </svg>
+                        <span>जतन करा (Save)</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 2. Modal: Add / Rename Bhajan Title -->
+    <div id="modal-bhajan" class="modal-backdrop">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="modal-bhajan-heading">नवीन भजन जोडा</h3>
+                <button type="button" class="modal-close-btn" id="modal-bhajan-close">✕</button>
+            </div>
+            <form id="form-bhajan" onsubmit="return false;">
+                <div class="modal-body">
+                    <input type="hidden" id="modal-bhajan-id">
+                    <div class="form-group">
+                        <label class="form-label" for="input-bhajan-title">भजनाचे शीर्षक (Bhajan Title)*</label>
+                        <input type="text" id="input-bhajan-title" class="form-input" placeholder="उदा. सुखकर्ता दुःखहर्ता, माझे माहेर पंढरी..." required autofocus>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" style="font-size: 0.78rem;">सुचवलेली भजने:</label>
+                        <div class="preset-chips-list">
+                            <button type="button" class="preset-chip" data-title="जय देव जय मंगलमूर्ती">जय देव जय मंगलमूर्ती</button>
+                            <button type="button" class="preset-chip" data-title="आनंदाचे डोही आनंद तरंग">आनंदाचे डोही आनंद</button>
+                            <button type="button" class="preset-chip" data-title="अवघा रंग एक झाला">अवघा रंग एक झाला</button>
+                            <button type="button" class="preset-chip" data-title="राम नाम मुखी वदा">राम नाम मुखी वदा</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary" id="modal-bhajan-cancel">रद्द करा</button>
+                    <button type="submit" class="btn-primary" id="modal-bhajan-save">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        <span>पुढे जा (Open Editor)</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 3. Modal: Confirmation for Deletions -->
+    <div id="modal-confirm" class="modal-backdrop">
+        <div class="modal-card" style="max-width: 400px;">
+            <div class="modal-header">
+                <h3 id="modal-confirm-title">खात्री करा (Confirm)</h3>
+                <button type="button" class="modal-close-btn" id="modal-confirm-close">✕</button>
+            </div>
+            <div class="modal-body">
+                <p id="modal-confirm-message" style="color: var(--text-secondary); font-size: 0.95rem;">
+                    तुम्हाला खरोखर हे हटवायचे आहे का? ही क्रिया परत करता येणार नाही.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-secondary" id="modal-confirm-cancel">नाही, राहू द्या</button>
+                <button type="button" class="btn-danger" id="modal-confirm-action">हो, हटवा</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container">
+        <div id="app-toast" class="toast">
+            <span id="toast-icon">✨</span>
+            <span id="toast-message">यशस्वीरीत्या जतन केले!</span>
+        </div>
+    </div>
+
+    <!-- Application Scripts -->
+    <script src="js/storage.js?v=2.6"></script>
+    <script src="js/app.js?v=2.6"></script>
+</body>
+</html>

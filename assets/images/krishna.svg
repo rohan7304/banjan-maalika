@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="k_bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E1F5FE"/>
+      <stop offset="70%" stop-color="#B3E5FC"/>
+      <stop offset="100%" stop-color="#81D4FA"/>
+    </radialGradient>
+    <linearGradient id="k_feather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E676"/>
+      <stop offset="40%" stop-color="#00B0FF"/>
+      <stop offset="80%" stop-color="#651FFF"/>
+      <stop offset="100%" stop-color="#D50000"/>
+    </linearGradient>
+    <linearGradient id="k_gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF59D"/>
+      <stop offset="100%" stop-color="#FBC02D"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#k_bg)" stroke="#0288D1" stroke-width="4"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#039BE5" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Peacock Feather (Mor Pankh) -->
+  <path d="M100 20 C85 30 75 55 100 70 C125 55 115 30 100 20 Z" fill="url(#k_feather)" stroke="#FFD54F" stroke-width="1.5"/>
+  <ellipse cx="100" cy="45" rx="10" ry="14" fill="#00B0FF"/>
+  <ellipse cx="100" cy="46" rx="6" ry="8" fill="#651FFF"/>
+  <circle cx="100" cy="46" r="3" fill="#D50000"/>
+  <!-- Crown / Hair -->
+  <circle cx="100" cy="72" r="16" fill="#1A237E"/>
+  <path d="M80 75 L120 75 L100 60 Z" fill="url(#k_gold)"/>
+  <!-- Flute (Bansuri) -->
+  <g transform="rotate(-25 100 120)">
+    <rect x="40" y="115" width="120" height="12" rx="4" fill="url(#k_gold)" stroke="#E65100" stroke-width="1.5"/>
+    <circle cx="70" cy="121" r="2.5" fill="#3E2723"/>
+    <circle cx="85" cy="121" r="2.5" fill="#3E2723"/>
+    <circle cx="100" cy="121" r="2.5" fill="#3E2723"/>
+    <circle cx="115" cy="121" r="2.5" fill="#3E2723"/>
+    <circle cx="130" cy="121" r="2.5" fill="#3E2723"/>
+    <!-- Ghungroo / Tassel -->
+    <path d="M150 125 L158 145" stroke="#D50000" stroke-width="2"/>
+    <circle cx="158" cy="148" r="4" fill="#FFD54F"/>
+  </g>
+  <text x="100" y="186" font-size="15" font-family="'Rozha One', serif" font-weight="bold" fill="#0D47A1" text-anchor="middle">श्री कृष्ण</text>
+</svg>

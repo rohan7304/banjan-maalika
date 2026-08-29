@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="diya_bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="70%" stop-color="#FFECB3"/>
+      <stop offset="100%" stop-color="#FFD54F"/>
+    </radialGradient>
+    <radialGradient id="flame" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#FFEE58"/>
+      <stop offset="70%" stop-color="#FF9800"/>
+      <stop offset="100%" stop-color="#D50000"/>
+    </radialGradient>
+    <linearGradient id="brass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="50%" stop-color="#FFA000"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#diya_bg)" stroke="#FF8F00" stroke-width="4"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#FF6F00" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Aura / Glow -->
+  <circle cx="100" cy="70" r="38" fill="rgba(255, 179, 0, 0.25)"/>
+  <!-- Flame -->
+  <path d="M100 28 C90 50 82 65 85 80 C88 95 112 95 115 80 C118 65 110 50 100 28 Z" fill="url(#flame)"/>
+  <circle cx="100" cy="78" r="8" fill="#FFFDE7"/>
+  <!-- Diya Lamp Base -->
+  <path d="M55 95 C55 135 145 135 145 95 Q100 115 55 95 Z" fill="url(#brass)" stroke="#BF360C" stroke-width="2"/>
+  <!-- Stand -->
+  <path d="M92 120 L80 155 L120 155 L108 120 Z" fill="url(#brass)" stroke="#BF360C" stroke-width="1.5"/>
+  <ellipse cx="100" cy="155" rx="35" ry="8" fill="url(#brass)" stroke="#BF360C" stroke-width="2"/>
+  <text x="100" y="186" font-size="15" font-family="'Rozha One', serif" font-weight="bold" fill="#BF360C" text-anchor="middle">नित्य आरती</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="v_bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="70%" stop-color="#FFECB3"/>
+      <stop offset="100%" stop-color="#FFE082"/>
+    </radialGradient>
+    <linearGradient id="v_body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#37474F"/>
+      <stop offset="50%" stop-color="#212121"/>
+      <stop offset="100%" stop-color="#121212"/>
+    </linearGradient>
+    <linearGradient id="v_gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF176"/>
+      <stop offset="100%" stop-color="#F57F17"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#v_bg)" stroke="#F57F17" stroke-width="4"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#FFA000" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Crown (Shivalinga Top / Mukut) -->
+  <path d="M78 60 C78 30 122 30 122 60 Z" fill="url(#v_gold)" stroke="#E65100" stroke-width="2"/>
+  <circle cx="100" cy="30" r="6" fill="#FFD54F"/>
+  <circle cx="100" cy="45" r="4" fill="#D50000"/>
+  <!-- Face -->
+  <path d="M72 58 C70 95 80 115 100 115 C120 115 130 95 128 58 Z" fill="url(#v_body)" stroke="#263238" stroke-width="2"/>
+  <!-- Kundal (Fish Shaped Earrings) -->
+  <path d="M66 75 C55 85 55 105 68 112 C72 100 70 85 66 75 Z" fill="url(#v_gold)" stroke="#E65100" stroke-width="1.5"/>
+  <path d="M134 75 C145 85 145 105 132 112 C128 100 130 85 134 75 Z" fill="url(#v_gold)" stroke="#E65100" stroke-width="1.5"/>
+  <!-- White & Kasturi Tilak -->
+  <path d="M88 65 Q100 80 112 65 Q100 72 88 65 Z" fill="#FFFFFF"/>
+  <path d="M96 68 L104 68 L100 78 Z" fill="#D50000"/>
+  <circle cx="100" cy="84" r="2.5" fill="#FFFFFF"/>
+  <!-- Lotus Eyes -->
+  <path d="M80 82 Q90 78 96 85 Q90 89 80 82 Z" fill="#FFFFFF"/>
+  <circle cx="89" cy="83" r="2" fill="#212121"/>
+  <path d="M120 82 Q110 78 104 85 Q110 89 120 82 Z" fill="#FFFFFF"/>
+  <circle cx="111" cy="83" r="2" fill="#212121"/>
+  <!-- Kaustubha Mani & Garland (Kanthi) -->
+  <path d="M80 115 Q100 135 120 115" stroke="url(#v_gold)" stroke-width="4" fill="none"/>
+  <circle cx="100" cy="128" r="5" fill="#D50000" stroke="#FFD54F" stroke-width="1"/>
+  <!-- Tulsi Garland -->
+  <path d="M72 120 Q100 155 128 120" stroke="#33691E" stroke-width="3" stroke-dasharray="3,3" fill="none"/>
+  <!-- Hands on Hips (Kateshivare Haath) -->
+  <path d="M62 135 C50 145 65 165 78 158" stroke="url(#v_body)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M138 135 C150 145 135 165 122 158" stroke="url(#v_body)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Brick (Veet) -->
+  <rect x="75" y="166" width="50" height="10" rx="3" fill="#D84315" stroke="#BF360C" stroke-width="1.5"/>
+  <text x="100" y="190" font-size="15" font-family="'Rozha One', serif" font-weight="bold" fill="#4E342E" text-anchor="middle">श्री विठ्ठल</text>
+</svg>

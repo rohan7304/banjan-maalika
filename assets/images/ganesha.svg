@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="g_bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF3E0"/>
+      <stop offset="70%" stop-color="#FFE0B2"/>
+      <stop offset="100%" stop-color="#FFB74D"/>
+    </radialGradient>
+    <linearGradient id="g_gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="50%" stop-color="#FFA000"/>
+      <stop offset="100%" stop-color="#FF6F00"/>
+    </linearGradient>
+    <linearGradient id="g_red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="100%" stop-color="#C62828"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#g_bg)" stroke="#E65100" stroke-width="4"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#FFA000" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Crown / Mukut -->
+  <path d="M70 65 L100 20 L130 65 Z" fill="url(#g_gold)" stroke="#B71C1C" stroke-width="2"/>
+  <path d="M85 45 L100 22 L115 45 Z" fill="url(#g_red)"/>
+  <circle cx="100" cy="40" r="5" fill="#FFF"/>
+  <circle cx="100" cy="20" r="4" fill="#FFD54F"/>
+  <!-- Ears -->
+  <path d="M60 75 C30 65 25 110 55 120 C65 115 65 95 60 75 Z" fill="#FFA726" stroke="#E65100" stroke-width="2"/>
+  <path d="M140 75 C170 65 175 110 145 120 C135 115 135 95 140 75 Z" fill="#FFA726" stroke="#E65100" stroke-width="2"/>
+  <!-- Head & Trunk -->
+  <path d="M65 75 C65 60 135 60 135 75 C135 110 118 120 115 145 C112 165 130 170 135 160 C138 152 130 148 122 152 C115 156 112 142 110 125 C105 95 95 85 65 75 Z" fill="#FFB74D" stroke="#E65100" stroke-width="2.5"/>
+  <!-- Tilak -->
+  <path d="M92 68 Q100 60 108 68 Q100 75 92 68 Z" fill="url(#g_red)"/>
+  <line x1="88" y1="65" x2="112" y2="65" stroke="#FFE082" stroke-width="2"/>
+  <line x1="90" y1="70" x2="110" y2="70" stroke="#FFE082" stroke-width="2"/>
+  <circle cx="100" cy="62" r="3" fill="#D50000"/>
+  <!-- Eyes -->
+  <path d="M78 80 Q85 76 90 82" stroke="#3E2723" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M110 82 Q115 76 122 80" stroke="#3E2723" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Tusk -->
+  <path d="M85 115 L68 122 L83 125 Z" fill="#FFF" stroke="#E0E0E0" stroke-width="1"/>
+  <!-- Modak -->
+  <circle cx="60" cy="140" r="16" fill="url(#g_gold)" stroke="#FF6F00" stroke-width="1.5"/>
+  <path d="M60 126 L64 140 L56 140 Z" fill="#FFF8E1"/>
+  <!-- Om symbol -->
+  <text x="100" y="186" font-size="16" font-family="'Rozha One', serif" font-weight="bold" fill="#B71C1C" text-anchor="middle">श्री गणेश</text>
+</svg>
